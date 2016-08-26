@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		<record model="openacademy.session" id="session_0">
+			<field name="name">HTML</field>
+			<field name="state">draft</field>
+			<field name="duration">36</field>
+			<field name="seats">40</field>
+		</record>
+		<record model="openacademy.session" id="session_1">
+			<field name="name">CSS</field>
+			<field name="state">draft</field>
+			<field name="duration">36</field>
+			<field name="seats">40</field>
+		</record>
+		<record model="openacademy.instructor" id="instructor_0">
+           <field name="name">Agam</field>
+       </record>
+       <record model="openacademy.instructor" id="instructor_1">
+           <field name="name">Sakshi</field>
+       </record>
+       <record model="openacademy.instructor" id="instructor_2">
+           <field name="name">Rupesh</field>
+       </record>
+		<record model="openacademy.course" id="course_0">
+			<field name="name">MCA</field>
+			<field name="duration">36</field>
+		</record>
+		<record model="openacademy.course" id="course_2">
+			<field name="name">BCA</field>
+			<field name="duration">36</field>
+		</record>
+
+	</data>
+</openerp>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		<template id="home">
+			<title>Hotel Management</title>
+			<t t-foreach="customer" t-as="cust">
+				<p><t t-esc="cust"/></p>
+			</t>
+		</template>
+	</data>
+</openerp>

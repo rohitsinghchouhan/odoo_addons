@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		<menuitem name="Open Academy" id="menu_root"/>
+		<menuitem name="General" id="menu_general" parent="menu_root"/>
+		<record model="ir.actions.act_window" id="action_course">
+			<field name="name">Course</field>
+			<field name="res_model">openacademy.course</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+		<menuitem name="Course" id="menu_course" parent="menu_general" action="action_course"/>
+		<record model="ir.actions.act_window" id="action_session">
+			<field name="name">Session</field>
+			<field name="res_model">openacademy.session</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+		<menuitem name="Session" id="menu_session" parent="menu_general" action="action_session"/>	
+		<record model="ir.actions.act_window" id="action_instructor">
+			<field name="name">Instructor</field>
+			<field name="res_model">openacademy.instructor</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+		<menuitem name="Instructor" id="menu_instructor" parent="menu_general" action="action_instructor"/>	
+	</data>
+</openerp>

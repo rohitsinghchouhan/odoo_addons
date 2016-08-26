@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		<record model="ir.ui.view" id="instructor_tree">
+			<field name="name">instructor.view.tree</field>
+			<field name="model">openacademy.instructor</field>
+			<field name="arch" type="xml">
+				<tree>				
+					<field name="name"></field>
+					<field name="description"></field>
+					<field name="year"></field>
+				</tree>	
+			</field>
+		</record>
+	</data>
+</openerp>

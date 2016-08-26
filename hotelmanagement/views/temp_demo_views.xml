@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		<template id="index">
+			<title>Hotel Management</title>
+			<t t-foreach="customer" t-as="cust">
+				<p><t t-esc="cust.name"/></p>
+			</t>
+			<form action="/hotelmanagement/home" method="post">
+				<input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+				<input name="name" type="text"/>
+				<input name="btn_submit" type="submit"/>
+			</form>
+		</template>
+	</data>
+</openerp>

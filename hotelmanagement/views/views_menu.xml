@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		<menuitem name="Hotel Management" id="menu_root"/>
+		<menuitem name="General" id="menu_general" parent="menu_root"/>
+		<record model="ir.actions.act_window" id="action_customer">
+			<field name="name">Customer</field>
+			<field name="res_model">hotelmanagement.customer</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+		<menuitem name="Customer" id="menu_customer" parent="menu_general" action="action_customer"/>
+		<record model="ir.actions.act_window" id="action_room">
+			<field name="name">Room</field>
+			<field name="res_model">hotelmanagement.room</field>
+			<field name="view_mode">tree,form</field>
+			<field name="target">current</field>
+		</record>
+		<menuitem name="Room" id="menu_room" parent="menu_general" action="action_room"/>	
+		<record model="ir.actions.act_window" id="action_regst">
+			<field name="name">Registor</field>
+			<field name="res_model">hotelmanagement.regst</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+		<menuitem name="Registor" id="menu_regst" parent="menu_general" action="action_regst"/>	
+	</data>
+</openerp>

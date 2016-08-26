@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		<record model="workflow" id="workflow_id">
+			<field name="name">workflow</field>
+			<field name="osv">hotelmanagement.regst</field>
+			<field name="on_create">True</field>
+		</record>
+		<record model="workflow.activity" id="activity_regst">
+			<field name="wkf_id" ref="workflow_id"></field>
+			<field name="flow_start">True</field>
+			<field name="name">Registor</field>
+			<field name="kind">function</field>
+			<field name="action">action_check_in()</field>
+		</record>
+		<record model="workflow.activity" id="activity_check_in">
+			<field name="wkf_id" ref="workflow_id"></field>
+			<field name="flow_stop">True</field>
+			<field name="name">Registor</field>
+			<field name="kind">function</field>
+			<field name="action">action_checkout()</field>
+		</record>
+		<record model="workflow.transition" id="transition_checkin">
+			<field name="act_from" ref="activity_regst"/>
+			<field name="act_to" ref="activity_check_in"/>
+			<field name="signal">Registor confirm</field>
+		</record>
+	</data>
+</openerp>

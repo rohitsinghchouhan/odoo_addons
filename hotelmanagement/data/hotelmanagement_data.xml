@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		<record model="hotelmanagement.customer" id="customer_0">
+			<field name="name">Rohit</field>
+			<field name="address">899sdsffggf</field>
+			<field name="mobile_number">12233</field>
+		</record>
+		<record model="hotelmanagement.room" id="room_0">
+			<field name="room_no">101</field>
+			<field name="room_price">3600</field>
+			<!-- <field name="seats">40</field> -->
+		</record>
+		<!-- <record model="openacademy.instructor" id="instructor_0">
+           <field name="name">Agam</field>
+       </record>
+       <record model="openacademy.instructor" id="instructor_1">
+           <field name="name">Sakshi</field>
+       </record>
+       <record model="openacademy.instructor" id="instructor_2">
+           <field name="name">Rupesh</field>
+       </record>
+		<record model="openacademy.course" id="course_0">
+			<field name="name">MCA</field>
+			<field name="duration">36</field>
+		</record>
+		<record model="openacademy.course" id="course_2">
+			<field name="name">BCA</field>
+			<field name="duration">36</field>
+		</record> -->
+
+	</data>
+</openerp>

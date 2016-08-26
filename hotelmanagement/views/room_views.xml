@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		<record model="ir.ui.view" id="room_view_form">
+			<field name="name">room.form</field>
+			<field name="model">hotelmanagement.room</field>
+			<field name="arch" type="xml">
+				<form>
+					<sheet>
+						<group>
+							<group>
+								<field name="room_no"></field>
+								<field name="room_type"></field>
+							</group>
+							<group>
+								<field name="room_price"></field>
+								<field name="room_capacity"></field>
+							</group>
+						</group>
+					</sheet>
+				</form>
+			</field>	
+		</record>
+		<record model="ir.ui.view" id="room_tree">
+			<field name="name">room.view.tree</field>
+			<field name="model">hotelmanagement.room</field>
+			<field name="arch" type="xml">
+				<tree>				
+					<field name="room_no"></field>
+					<field name="room_type"></field>
+				</tree>
+			</field>
+		</record>
+	</data>
+</openerp>
